@@ -11,7 +11,7 @@
  *
  * https://electronjs.org/docs/tutorial/security
  *
- * To enable Node.js integration in this file, open up `main.js` and enable the `nodeIntegration`
+ * To enable Node.js integration in this file, open up `main.ts` and enable the `nodeIntegration`
  * flag:
  *
  * ```
@@ -26,6 +26,8 @@
  * ```
  */
 
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-console.log('👋 This message is being logged by "renderer.js", included via webpack');
+ReactDOM.render(<App />, document.getElementById("root"));
