@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from "electron";
+import tryTaiko from "./try-taiko";
 
 declare var MAIN_WINDOW_WEBPACK_ENTRY: any;
 
@@ -32,6 +33,9 @@ const createWindow = () => {
     // when you should delete the corresponding element.
     mainWindow = null;
   });
+
+  // todo delete
+  tryTaiko();
 };
 
 // This method will be called when Electron has finished
